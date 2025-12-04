@@ -14,8 +14,11 @@ import { Navigation } from '@/components/ui/navigation';
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      {/* Navigation */}
+      <Navigation />
+
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
         <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
         <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
           <div className="mb-8">
@@ -76,16 +79,20 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <FeatureGrid />
+      <section id="features">
+        <FeatureGrid />
+      </section>
 
       {/* Testimonials Section */}
-      <Testimonials />
+      <section id="about">
+        <Testimonials />
+      </section>
 
       {/* Call to Action */}
       <CTASection />
 
       {/* Components Showcase Section */}
-      <section className="py-20 px-4">
+      <section id="components" className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
