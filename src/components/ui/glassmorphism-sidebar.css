@@ -1,0 +1,82 @@
+/* Glassmorphism Sidebar Styles */
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.content-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-table th {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+}
+
+.custom-table td {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.task-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.task-list-item span:first-child {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.task-list-item span:last-child {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Background shapes for visual effect */
+.shape-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.shape-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+}
