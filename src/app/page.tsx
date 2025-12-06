@@ -10,9 +10,6 @@ import { FeatureGrid } from '@/components/ui/feature-grid';
 import { Testimonials } from '@/components/ui/testimonials';
 import { CTASection } from '@/components/ui/cta-section';
 import { Navigation } from '@/components/ui/navigation';
-import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
-import { Terminal } from 'lucide-react';
-import { motion } from 'framer-motion';
 import { ParticleTextEffect } from '@/components/ui/particle-text-effect'; // Directly import ParticleTextEffect
 
 export default function Home() {
