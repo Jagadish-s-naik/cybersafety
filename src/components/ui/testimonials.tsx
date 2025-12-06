@@ -38,7 +38,7 @@ const testimonials: Testimonial[] = [
 
 export function Testimonials() {
   return (
-    <section className="py-20 px-4 bg-gradient-to-r from-blue-100/50 via-purple-100/50 to-pink-100/50">
+    <section className="py-20 px-4 bg-gradient-to-r from-blue-50/50 via-purple-50/50 to-pink-50/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -58,12 +58,12 @@ export function Testimonials() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <Card className="bg-white/20 backdrop-blur-md border border-white/40 rounded-2xl p-8 hover:bg-white/30 transition-all duration-300">
+              <Card className="bg-white/50 backdrop-blur-md border border-white/70 rounded-2xl p-8 hover:bg-white/60 transition-all duration-300">
                 <CardHeader className="flex-row items-center p-0 mb-6">
                   <img
                     src={testimonial.avatar}
                     alt={testimonial.name}
-                    className="w-12 h-12 rounded-full mr-4 border-2 border-white/30"
+                    className="w-12 h-12 rounded-full mr-4 border-2 border-white/50"
                   />
                   <div>
                     <CardTitle className="text-gray-900 font-semibold text-lg p-0 mb-0">{testimonial.name}</CardTitle>
