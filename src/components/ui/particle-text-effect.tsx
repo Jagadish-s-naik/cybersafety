@@ -174,6 +174,8 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
   }, [])
 
   const nextWord = useCallback((word: string, canvas: HTMLCanvasElement) => {
+    if (canvas.width === 0 || canvas.height === 0) return; // Add this check
+
     const offscreenCanvas = document.createElement("canvas")
     offscreenCanvas.width = canvas.width
     offscreenCanvas.height = canvas.height
