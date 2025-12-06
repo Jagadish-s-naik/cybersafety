@@ -8,15 +8,15 @@ const alertVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-white/50 text-gray-800 border-white/60", // Brighter default
+        default: "bg-white/70 text-gray-800 border-white/80", // Brighter default
         destructive:
-          "border-red-500/70 text-red-800 [&>svg]:text-red-800 bg-red-200/50", // Brighter destructive
+          "border-red-400/80 text-red-800 [&>svg]:text-red-800 bg-red-100/70", // Brighter destructive
         success:
-          "border-green-500/70 text-green-800 [&>svg]:text-green-800 bg-green-200/50", // Brighter success
+          "border-green-400/80 text-green-800 [&>svg]:text-green-800 bg-green-100/70", // Brighter success
         warning:
-          "border-orange-500/70 text-orange-800 [&>svg]:text-orange-800 bg-orange-200/50", // Brighter warning
+          "border-orange-400/80 text-orange-800 [&>svg]:text-orange-800 bg-orange-100/70", // Brighter warning
         info:
-          "border-blue-500/70 text-blue-800 [&>svg]:text-blue-800 bg-blue-200/50", // Brighter info
+          "border-blue-400/80 text-blue-800 [&>svg]:text-blue-800 bg-blue-100/70", // Brighter info
       },
     },
     defaultVariants: {
