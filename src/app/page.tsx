@@ -19,7 +19,7 @@ import { motion } from 'framer-motion'; // Re-adding motion import
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-300 via-purple-300 to-pink-300 text-gray-900">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 text-gray-900">
       {/* Navigation */}
       <Navigation />
 
