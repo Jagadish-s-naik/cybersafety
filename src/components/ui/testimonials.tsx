@@ -1,6 +1,8 @@
 "use client";
 
 import React from 'react';
+import { motion } from 'framer-motion';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 interface Testimonial {
   name: string;
@@ -36,47 +38,51 @@ const testimonials: Testimonial[] = [
 
 export function Testimonials() {
   return (
-    <section className="py-20 px-4 bg-gradient-to-r from-slate-900/50 to-purple-900/50">
+    <section className="py-20 px-4 bg-gradient-to-r from-blue-100/50 via-purple-100/50 to-pink-100/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Trusted by Security Experts
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             See what cybersecurity professionals are saying about CyberSafety
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <div className="flex items-center mb-6">
-                <img
-                  src={testimonial.avatar}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full mr-4 border-2 border-white/20"
-                />
-                <div>
-                  <h4 className="text-white font-semibold">{testimonial.name}</h4>
-                  <p className="text-gray-300 text-sm">{testimonial.role}</p>
-                  <p className="text-purple-300 text-sm">{testimonial.company}</p>
-                </div>
-              </div>
-
-              <div className="mb-6">
-                <div className="flex text-yellow-400 mb-4">
-                  {'★★★★★'.split('').map((star, i) => (
-                    <span key={i} className="text-lg">★</span>
-                  ))}
-                </div>
-                <blockquote className="text-gray-200 italic leading-relaxed">
-                  "{testimonial.content}"
-                </blockquote>
-              </div>
-            </div>
+              <Card className="bg-white/20 backdrop-blur-md border border-white/40 rounded-2xl p-8 hover:bg-white/30 transition-all duration-300">
+                <CardHeader className="flex-row items-center p-0 mb-6">
+                  <img
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full mr-4 border-2 border-white/30"
+                  />
+                  <div>
+                    <CardTitle className="text-gray-900 font-semibold text-lg p-0 mb-0">{testimonial.name}</CardTitle>
+                    <CardDescription className="text-gray-700 text-sm p-0 mb-0">{testimonial.role}</CardDescription>
+                    <p className="text-purple-600 text-sm">{testimonial.company}</p>
+                  </div>
+                </CardHeader>
+                <CardContent className="p-0">
+                  <div className="flex text-yellow-500 mb-4">
+                    {'★★★★★'.split('').map((star, i) => (
+                      <span key={i} className="text-lg">★</span>
+                    ))}
+                  </div>
+                  <blockquote className="text-gray-800 italic leading-relaxed">
+                    "{testimonial.content}"
+                  </blockquote>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>
