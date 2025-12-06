@@ -8,15 +8,15 @@ const alertVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-white/20 text-white border-white/30", // Brighter default
+        default: "bg-white/50 text-gray-800 border-white/60", // Brighter default
         destructive:
-          "border-red-500/50 text-red-400 dark:border-red-500 [&>svg]:text-red-400 bg-red-900/20", // Brighter destructive
+          "border-red-500/70 text-red-800 [&>svg]:text-red-800 bg-red-200/50", // Brighter destructive
         success:
-          "border-green-500/50 text-green-400 dark:border-green-500 [&>svg]:text-green-400 bg-green-900/20", // Brighter success
+          "border-green-500/70 text-green-800 [&>svg]:text-green-800 bg-green-200/50", // Brighter success
         warning:
-          "border-orange-500/50 text-orange-400 dark:border-orange-500 [&>svg]:text-orange-400 bg-orange-900/20", // Brighter warning
+          "border-orange-500/70 text-orange-800 [&>svg]:text-orange-800 bg-orange-200/50", // Brighter warning
         info:
-          "border-blue-500/50 text-blue-400 dark:border-blue-500 [&>svg]:text-blue-400 bg-blue-900/20", // Brighter info
+          "border-blue-500/70 text-blue-800 [&>svg]:text-blue-800 bg-blue-200/50", // Brighter info
       },
     },
     defaultVariants: {
