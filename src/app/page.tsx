@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { DemoBackgroundPaths } from '@/components/ui/demo-background-paths';
 import { GlowingEffectDemo } from '@/components/ui/demo-glowing-effect';
