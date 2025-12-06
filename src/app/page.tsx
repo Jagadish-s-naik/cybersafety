@@ -10,6 +10,10 @@ import { FeatureGrid } from '@/components/ui/feature-grid';
 import { Testimonials } from '@/components/ui/testimonials';
 import { CTASection } from '@/components/ui/cta-section';
 import { Navigation } from '@/components/ui/navigation';
+import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
+import { Terminal } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { ParticleTextEffect } from '@/components/ui/particle-text-effect'; // Directly import ParticleTextEffect
 
 export default function Home() {
   return (
@@ -27,9 +31,9 @@ export default function Home() {
             </span>
           </div>
 
-          <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-white via-purple-200 to-cyan-200 bg-clip-text text-transparent mb-6 leading-tight">
-            CyberSafety
-          </h1>
+          <div className="mb-6 flex items-center justify-center min-h-[200px] md:min-h-[250px]">
+            <ParticleTextEffect words={["CyberSafety"]} />
+          </div>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Live Cyber Attack Alert System with AI-powered threat detection,
@@ -46,7 +50,7 @@ export default function Home() {
           </div>
 
           {/* Feature highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-16">
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300">
               <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4 mx-auto">
                 <span className="text-white text-xl">🛡️</span>
