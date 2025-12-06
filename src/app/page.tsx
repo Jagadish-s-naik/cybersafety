@@ -11,6 +11,9 @@ import { Testimonials } from '@/components/ui/testimonials';
 import { CTASection } from '@/components/ui/cta-section';
 import { Navigation } from '@/components/ui/navigation';
 import { ParticleTextEffect } from '@/components/ui/particle-text-effect'; // Directly import ParticleTextEffect
+import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert'; // Re-adding Alert imports
+import { Terminal } from 'lucide-react'; // Re-adding Terminal icon import
+import { motion } from 'framer-motion'; // Re-adding motion import
 
 export default function Home() {
   return (
