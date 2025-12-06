@@ -72,7 +72,7 @@ export function FeatureGrid() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <Card className="group bg-white/20 backdrop-blur-md border border-white/40 hover:bg-white/30 hover:border-white/50 transition-all duration-300 hover:transform hover:scale-105">
+              <Card className="group bg-white/50 backdrop-blur-md border border-white/70 hover:bg-white/60 hover:border-white/80 transition-all duration-300 hover:transform hover:scale-105">
                 <CardHeader className="text-center">
                   <div className={`w-16 h-16 bg-gradient-to-r ${feature.color} rounded-xl flex items-center justify-center mb-4 text-3xl mx-auto group-hover:scale-110 transition-transform duration-300 text-white`}>
                     {feature.icon}
