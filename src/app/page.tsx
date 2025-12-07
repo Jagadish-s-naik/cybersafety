@@ -17,10 +17,9 @@ import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert'; // 
 import { Terminal } from 'lucide-react'; // Re-adding Terminal icon import
 import { motion } from 'framer-motion'; // Re-adding motion import
 import CyberSecurityDashboard from '@/components/ui/cyber-security-dashboard';
-import { Demo as GradientButtonDemo } from '@/components/ui/demo';
 
 export default function Home() {
   return (
-    <GradientButtonDemo />
+    <CyberSecurityDashboard />
   );
 }
