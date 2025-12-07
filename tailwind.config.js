@@ -17,59 +17,69 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "var(--color-border)",
-        input: "var(--color-input)",
-        ring: "var(--color-ring)",
-        background: "var(--color-background)",
-        foreground: "var(--color-foreground)",
+        border: {
+          DEFAULT: "var(--border)",
+        },
+        input: {
+          DEFAULT: "var(--input)",
+        },
+        ring: {
+          DEFAULT: "var(--ring)",
+        },
+        background: {
+          DEFAULT: "var(--background)",
+        },
+        foreground: {
+          DEFAULT: "var(--foreground)",
+        },
         card: {
-          DEFAULT: "var(--color-card)",
-          foreground: "var(--color-card-foreground)",
+          DEFAULT: "var(--card)",
+          foreground: "var(--card-foreground)",
         },
         popover: {
-          DEFAULT: "var(--color-popover)",
-          foreground: "var(--color-popover-foreground)",
+          DEFAULT: "var(--popover)",
+          foreground: "var(--popover-foreground)",
         },
         primary: {
-          DEFAULT: "var(--color-primary)",
-          foreground: "var(--color-primary-foreground)",
+          DEFAULT: "var(--primary)",
+          foreground: "var(--primary-foreground)",
         },
         secondary: {
-          DEFAULT: "var(--color-secondary)",
-          foreground: "var(--color-secondary-foreground)",
+          DEFAULT: "var(--secondary)",
+          foreground: "var(--secondary-foreground)",
         },
         muted: {
-          DEFAULT: "var(--color-muted)",
-          foreground: "var(--color-muted-foreground)",
+          DEFAULT: "var(--muted)",
+          foreground: "var(--muted-foreground)",
         },
         accent: {
-          DEFAULT: "var(--color-accent)",
-          foreground: "var(--color-accent-foreground)",
+          DEFAULT: "var(--accent)",
+          foreground: "var(--accent-foreground)",
         },
         destructive: {
-          DEFAULT: "var(--color-destructive)",
+          DEFAULT: "var(--destructive)",
           foreground: "hsl(var(--destructive-foreground))", // Keep as hsl as it's not defined in the new CSS
         },
         chart: {
-          1: "var(--color-chart-1)",
-          2: "var(--color-chart-2)",
-          3: "var(--color-chart-3)",
-          4: "var(--color-chart-4)",
-          5: "var(--color-chart-5)",
+          1: "var(--chart-1)",
+          2: "var(--chart-2)",
+          3: "var(--chart-3)",
+          4: "var(--chart-4)",
+          5: "var(--chart-5)",
         },
         sidebar: {
-          DEFAULT: "var(--color-sidebar)",
-          foreground: "var(--color-sidebar-foreground)",
+          DEFAULT: "var(--sidebar)",
+          foreground: "var(--sidebar-foreground)",
           primary: {
-            DEFAULT: "var(--color-sidebar-primary)",
-            foreground: "var(--color-sidebar-primary-foreground)",
+            DEFAULT: "var(--sidebar-primary)",
+            foreground: "var(--sidebar-primary-foreground)",
           },
           accent: {
-            DEFAULT: "var(--color-sidebar-accent)",
-            foreground: "var(--color-sidebar-accent-foreground)",
+            DEFAULT: "var(--sidebar-accent)",
+            foreground: "var(--sidebar-accent-foreground)",
           },
-          border: "var(--color-sidebar-border)",
-          ring: "var(--color-sidebar-ring)",
+          border: "var(--sidebar-border)",
+          ring: "var(--sidebar-ring)",
         },
       },
       borderRadius: {
