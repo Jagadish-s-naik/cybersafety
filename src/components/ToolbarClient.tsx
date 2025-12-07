@@ -7,7 +7,7 @@ const TwentyFirstToolbar = dynamic(
   () => import('@21st-extension/toolbar-next').then(mod => {
     const { TwentyFirstToolbar } = mod;
     return (props: any) => (
-      <TwentyFirstToolbar {...props} config={{ plugins: [ReactPlugin()] }} />
+      <TwentyFirstToolbar {...props} config={{ plugins: [ReactPlugin] }} />
     );
   }),
   { ssr: false }
