@@ -20,6 +20,7 @@ const nextConfig = {
       },
     ],
   },
+  transpilePackages: ['@21st-extension/react'],
 }
 
 module.exports = nextConfig
