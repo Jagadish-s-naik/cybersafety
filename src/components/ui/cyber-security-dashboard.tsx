@@ -57,6 +57,20 @@ const CyberSecurityDashboard: React.FC = () => {
   const [threats, setThreats] = useState<ThreatData[]>([]);
   const [devices, setDevices] = useState<DeviceNode[]>([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [windowDimensions, setWindowDimensions] = useState({ width: 0, height: 0 });
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWindowDimensions({ width: window.innerWidth, height: window.innerHeight });
+
+      const handleResize = () => {
+        setWindowDimensions({ width: window.innerWidth, height: window.innerHeight });
+      };
+
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
 
   useEffect(() => {
     // Simulate real-time threat detection
@@ -109,12 +123,12 @@ const CyberSecurityDashboard: React.FC = () => {
               key={i}
               className="absolute w-2 h-2 bg-blue-500/30 rounded-full"
               initial={{
-                x: Math.random() * window.innerWidth,
-                y: Math.random() * window.innerHeight
+                x: Math.random() * (windowDimensions.width || 0),
+                y: Math.random() * (windowDimensions.height || 0)
               }}
               animate={{
-                x: Math.random() * window.innerWidth,
-                y: Math.random() * window.innerHeight
+                x: Math.random() * (windowDimensions.width || 0),
+                y: Math.random() * (windowDimensions.height || 0)
               }}
               transition={{
                 duration: Math.random() * 10 + 10,
