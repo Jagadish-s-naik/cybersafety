@@ -13,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="antialiased scroll-smooth">
+    <html lang="en" className="font-sans">
+      <body className="antialiased scroll-smooth bg-background text-foreground">
         {children}
         {process.env.NODE_ENV === "development" && (
           <ToolbarClient /> // Render the new client component
