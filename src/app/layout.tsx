@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import 'tw-animate-css/dist/tw-animate.css';
 import ToolbarClient from '@/components/ToolbarClient'; // Import the new client component
 
 export const metadata: Metadata = {
