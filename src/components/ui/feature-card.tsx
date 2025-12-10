@@ -27,4 +27,3 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, del
 };
 
 export default FeatureCard;
-

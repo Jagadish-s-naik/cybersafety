@@ -58,4 +58,3 @@ const ThreatAlert: React.FC<ThreatAlertProps> = ({ threat }) => {
 };
 
 export default ThreatAlert;
-
