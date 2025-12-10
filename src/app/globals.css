@@ -9,6 +9,7 @@
 
 /* Custom dark variant for targeting dark mode elements */
 /* This is adapted for Tailwind v3's class-based dark mode */
+
 /* CSS variables and theme definitions */
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -129,6 +130,7 @@
     @apply bg-background text-foreground;
   }
 }
+
 @layer components {
   .gradient-button {
     @apply relative appearance-none cursor-pointer;
@@ -226,6 +228,7 @@
     --border-color-2: hsla(320, 50%, 90%, 0.75);
   }
 }
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
