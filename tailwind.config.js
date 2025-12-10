@@ -87,6 +87,7 @@ module.exports = {
         md: "var(--radius-md)",
         sm: "var(--radius-sm)",
         xl: "var(--radius-xl)",
+        xl: "var(--radius-xl)",
       },
       keyframes: {
         "accordion-down": {
