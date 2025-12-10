@@ -5,7 +5,7 @@
 
 /* Base imports */
 @import "tailwindcss";
-@import "tw-animate-css";
+@import "./node_modules/tw-animate-css/dist/tw-animate.css";
 
 /* Custom dark variant for targeting dark mode elements */
 /* This is adapted for Tailwind v3's class-based dark mode */
