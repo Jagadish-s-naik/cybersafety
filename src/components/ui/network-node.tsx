@@ -50,4 +50,3 @@ const NetworkNode: React.FC<NetworkNodeProps> = ({ device, index }) => {
 };
 
 export default NetworkNode;
-
