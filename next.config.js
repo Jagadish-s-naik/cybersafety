@@ -21,6 +21,14 @@ const nextConfig = {
     ],
   },
   transpilePackages: ['@21st-extension/react'],
+  experimental: {
+    turbopack: {
+      // Explicitly set the project root for Turbopack.
+      // This should be the directory where your package.json is located.
+      root: __dirname,
+    },
+  },
+}
 }
 
 module.exports = nextConfig
